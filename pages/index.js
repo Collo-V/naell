@@ -42,7 +42,7 @@ export default function Home() {
                 <div className={styles.myStore+" h-100px w-200px"}></div>
                 <div className={styles.agriFresh+" h-100px w-200px"}></div>
                 <div className={styles.apple+" h-100px w-200px"}></div>
-                <div className={" h-100px w-200px bg-red-500"}></div>
+                {/*<div className={" h-100px w-200px bg-red-500"}></div>*/}
             </div>
 
         </section>
