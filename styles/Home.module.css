@@ -1,3 +1,7 @@
+.landing{
+    background: url(../public/plantation.jpg) no-repeat center/cover
+}
+
 .ezgif{
     background: url(../public/clients/ezgif.png) no-repeat center/cover;
 }

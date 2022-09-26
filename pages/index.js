@@ -13,7 +13,7 @@ export default function Home() {
             <meta name="description" content="Source products from farmers" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <section className='landing h-screen-h flex items-center justify-center'>
+        <section className={styles.landing+' h-screen-h flex items-center justify-center'}>
             <form className='w-300px h-10 bg-white rounded-md p-3 flex justify-between items-center'>
                 <input type="text"  placeholder='I&apos;m looking for... '/>
                 <button>

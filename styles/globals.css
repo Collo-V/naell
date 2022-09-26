@@ -4,9 +4,7 @@
     font-family: 'Rubik', sans-serif;;
     @apply hidden;
 }
-.landing{
-    background: url(../public/clients/makueni.png) no-repeat center/cover
-}
+
 
 .link-active{
     color: #EA1C23;
