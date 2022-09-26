@@ -5,7 +5,7 @@
     @apply hidden;
 }
 .landing{
-    background: url(../public/plantation.jpg) no-repeat center/cover;
+    background: url(../public/clients/makueni.png) no-repeat center/cover
 }
 
 .link-active{
