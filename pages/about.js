@@ -1,25 +1,33 @@
 import React from 'react';
+import Head from "next/head";
+import Image from "next/image";
+import Partners from "../components/Partners";
 
 function About(props) {
     return (
         <React.Fragment>
-            <div className='pt-18 bg-slate-100 min-h-500px '>
-                <div className=" w-90% md:w-80% 2xl:w-60% mx-auto ">
+            <Head>
+                <title>Naell | about</title>
+                <meta name="description" content="Source products from farmers" />
+            </Head>
+            <div className='header pt-18 bg-slate-100 min-h-500px '>
+                <div className=" w-90% md:w-80% 2xl:w-60% mx-auto max-h-300px ">
                     <div className="text-center text-8 font-semibold">
                         We are changing the whole game
                     </div>
                     <div className='flex justify-center'>
-                        {/*<img src='/supplier.jpeg' alt="" className='h-300px'/>*/}
+                        <img src="/veges.png" alt="" className='h-450px w-auto'/>
                     </div>
                 </div>
             </div>
-            <div className="mt-4 w-90% md:w-80% 2xl:w-60% mx-auto">
+            <div className="story mt-12 w-90% md:w-80% 2xl:w-60% mx-auto pt-5">
                 <p className='text-primary font-bold text-5'>Our story</p>
-                <div className="lg:flex mt-4">
+                <div className="lg:flex mt-4  gap-10">
                     <div className="w-full flex flex-col justify-between pb-10">
                         <h2 className=''>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iste labore laboriosam laudantium
-                            minima necessitatibus porro quidem! Consequuntur, dolorem, porro?
+                            Naell Is a people first agricultural trading company, focusing on fruits
+                            and vegetables. We work to enable small scale and farmer
+                            cooperative in Kenya and East Africa to supply quality food to the world.
                         </h2>
                         <div className="flex gap-4 mt-4">
                             <div>
@@ -31,8 +39,10 @@ function About(props) {
                                 <div className="half-circle"></div>
                             </div>
                             <div className='pr-4'>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Blanditiis, dolor incidunt inventore omnis provident repudiandae.
+                                Order fruits such , any time and let our team do the fieldwork for you, from sourcing,
+                                quality control to exporting to your destination of choice.
+                                Working with us Is enabling the vulnerable in society, by creating job for them
+
                             </div>
 
                         </div>
@@ -72,6 +82,12 @@ function About(props) {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="my-10">
+                <h1 className="text-center my-4 text-6">
+                    Proud partners with
+                </h1>
+                <Partners/>
             </div>
             <div className="mt-24 w-90% md:w-80% 2xl:w-60% mx-auto grid lg:grid-cols-2 gap-10 items-center">
                 <div className="w-full">
