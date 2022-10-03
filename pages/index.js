@@ -7,13 +7,16 @@ import styles from '../styles/Home.module.css'
 import Partners from "../components/Partners";
 
 export default function Home() {
+
   return (
     <React.Fragment>
         <Head>
             <title>Naell - source products</title>
             <meta name="description" content="Source products from farmers" />
+
         </Head>
-        <section className={styles.landing+' h-screen-h flex items-center justify-center'}>
+        <section className={styles.landing+' h-screen-h flex items-center justify-center flex-col'}>
+            <h1 className='my-4 text-6 lg:text-8 text-white'>Source fruits and vegetables from all over Africa</h1>
             <form className='w-300px h-10 bg-white rounded-md p-3 flex justify-between items-center'>
                 <input type="text"  placeholder='I&apos;m looking for... '/>
                 <button>
@@ -23,7 +26,7 @@ export default function Home() {
             </form>
 
         </section>
-        <section  className='w-90% md:w-80% 2xl:w-60% mx-auto mt-3'>
+        <section  className='w-90% md:w-80% 2xl:w-60% mx-auto mt-4 text-center'>
             <h2 className='text-8 font-semibold mb-4'>
                 Naell.Africa-From the Heart of Africa
             </h2>

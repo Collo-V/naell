@@ -5,6 +5,7 @@ import {solid} from "@fortawesome/fontawesome-svg-core/import.macro";
 import {useRouter} from "next/router";
 import {manageScrollbar} from "../commons/basics";
 import Image from "next/image";
+// import i18next from "i18next";
 
 function Navbar(props) {
     const [showDrawer,setShowDrawer] = useState(false)
@@ -27,9 +28,26 @@ function Navbar(props) {
     useEffect(()=>{
         manageScrollbar()
     },[])
+    useEffect(()=>{
+        // i18next.init({
+        //     lng:'en',
+        //     resources :{
+        //         en:{
+        //             translation:{
+        //                 key:'Hello world'
+        //             }
+        //         }
+        //     }
+        // })
+        // console.log(i18next.t('key'))
+    },[])
+
+
+
 
     return (
         <React.Fragment>
+            {/*<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>*/}
             <nav className='fixed w-full top-0 left-0 h-16 shadow-md z-10 hidden lg:block' id='main-nav'>
                 <div className="flex justify-between items-center h-full w-80% mx-auto">
                     <Link href='/'>
@@ -84,6 +102,10 @@ function Navbar(props) {
 
                                 </div>
                         }
+
+                        <div>
+                            <div id="google_translate_element"></div>
+                        </div>
 
                     </div>
                 </div>

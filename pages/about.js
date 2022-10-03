@@ -13,16 +13,17 @@ function About(props) {
             <div className='header pt-18 bg-slate-100 min-h-500px '>
                 <div className=" w-90% md:w-80% 2xl:w-60% mx-auto max-h-300px ">
                     <div className="text-center text-8 font-semibold">
-                        We are changing the whole game
+                        Sourcing fruits and vegetables could never be easier
                     </div>
-                    <div className='flex justify-center'>
-                        <img src="/veges.png" alt="" className='h-450px w-auto'/>
+                    <div className='flex justify-center relative'>
+                        <div className="absolute left-0 right-0 top-0 bottom-0"></div>
+                        <img src="/veggies/veges.png" alt="" className='h-450px w-auto'/>
                     </div>
                 </div>
             </div>
             <div className="story mt-12 w-90% md:w-80% 2xl:w-60% mx-auto pt-5">
                 <p className='text-primary font-bold text-5'>Our story</p>
-                <div className="lg:flex mt-4  gap-10">
+                <div className="md:flex mt-4  gap-10">
                     <div className="w-full flex flex-col justify-between pb-10">
                         <h2 className=''>
                             Naell Is a people first agricultural trading company, focusing on fruits
@@ -30,13 +31,16 @@ function About(props) {
                             cooperative in Kenya and East Africa to supply quality food to the world.
                         </h2>
                         <div className="flex gap-4 mt-4">
-                            <div>
-                                <div className="flex gap-2 w-60px justify-center mb-1">
-                                    <div className="w-20px h-20px rounded-full bg-secondary"></div>
-                                    <div className="w-20px h-20px rounded-full bg-slate-200"></div>
+                            {/*<div>*/}
+                            {/*    <div className="flex gap-2 w-60px justify-center mb-1">*/}
+                            {/*        <div className="w-20px h-20px rounded-full bg-secondary"></div>*/}
+                            {/*        <div className="w-20px h-20px rounded-full bg-slate-200"></div>*/}
 
-                                </div>
-                                <div className="half-circle"></div>
+                            {/*    </div>*/}
+                            {/*    <div className="half-circle"></div>*/}
+                            {/*</div>*/}
+                            <div className='h-32 flex items-end'>
+                                <img src="/veggies/salad1.png" alt="" className='min-w-100px max-w-100px h-auto'/>
                             </div>
                             <div className='pr-4'>
                                 Order fruits such , any time and let our team do the fieldwork for you, from sourcing,
@@ -89,7 +93,7 @@ function About(props) {
                 </h1>
                 <Partners/>
             </div>
-            <div className="mt-24 w-90% md:w-80% 2xl:w-60% mx-auto grid lg:grid-cols-2 gap-10 items-center">
+            <div className="mt-24 w-90% md:w-80% 2xl:w-60% mx-auto grid md:grid-cols-2 gap-10 items-center">
                 <div className="w-full">
                     <h1 className="text-6">Our mission</h1>
                     <div className="mt-4 ">
@@ -126,15 +130,15 @@ function About(props) {
                         </div>
                     </div>
                 </div>
-                <div className="w-full">
-                    <img src="/supplier.jpeg" alt="" className='h-300px w-auto'/>
+                <div className="w-full h-fit p-1 bg-slate-100">
+                    <img src="/veggies/vegetables1.png" alt="" />
                 </div>
 
 
             </div>
-            <div className="mt-24 w-90% md:w-80% 2xl:w-60% mx-auto flex flex-col-reverse lg:flex-row gap-10 items-center">
-                <div className="w-full">
-                    <img src="/supplier.jpeg" alt="" className='h-300px w-auto'/>
+            <div className="mt-24 w-90% md:w-80% 2xl:w-60% mx-auto flex flex-col-reverse md:flex-row gap-10 items-center">
+                <div className="w-full p-1 bg-slate-100">
+                    <img src="/veggies/fruits1.png" alt="" />
                 </div>
                 <div className="w-full">
                     <h1 className="text-6">Our vision</h1>
