@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {solid} from "@fortawesome/fontawesome-svg-core/import.macro";
+import {regular, solid} from "@fortawesome/fontawesome-svg-core/import.macro";
 import {useRouter} from "next/router";
 import {manageScrollbar} from "../commons/basics";
 import Image from "next/image";
@@ -29,17 +29,7 @@ function Navbar(props) {
         manageScrollbar()
     },[])
     useEffect(()=>{
-        // i18next.init({
-        //     lng:'en',
-        //     resources :{
-        //         en:{
-        //             translation:{
-        //                 key:'Hello world'
-        //             }
-        //         }
-        //     }
-        // })
-        // console.log(i18next.t('key'))
+
     },[])
 
 
@@ -47,12 +37,10 @@ function Navbar(props) {
 
     return (
         <React.Fragment>
-            {/*<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>*/}
             <nav className='fixed w-full top-0 left-0 h-16 shadow-md z-10 hidden lg:block' id='main-nav'>
                 <div className="flex justify-between items-center h-full w-80% mx-auto">
                     <Link href='/'>
                         <a className="logo">
-                            {/*<div className="text-8 font-bold ml-10 text-primary">N<span className="text-secondary">aell</span></div>*/}
                             <Image src='/logo.png' width={113} height={50}/>
                         </a>
                     </Link>
@@ -60,14 +48,27 @@ function Navbar(props) {
                         <Link href='/about'>
                             <a className={'uppercase text-5 mr-4 hover:text-primary '+getActive('/about')}> About</a>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/vegetables'>
                             <a className={'uppercase text-5 mr-4 hover:text-primary '+getActive('/veges')}> Vegetables</a>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/fruits'>
                             <a className={'uppercase text-5 mr-4 hover:text-primary '+getActive('/fruits')}> Fruits</a>
                         </Link>
+                        <Link href='/herbs'>
+                            <a className={'uppercase text-5 mr-4 hover:text-primary '+getActive('/herbs')}> Herbs</a>
+                        </Link>
                     </div>
-                    <div>
+                    <div className='flex items-center'>
+                        <div className="mr-4 flex gap-4">
+                            <span className='flex items-center gap-2'>
+                                <FontAwesomeIcon icon={solid('phone')} className='h-4'/>
+                                <a href="tel:2547203439434" className='hover:underline hover:text-primary'>+2547 100 000 000</a>
+                            </span>
+                            <span className='flex items-center gap-2'>
+                                <FontAwesomeIcon icon={regular('envelope')} className='h-4'/>
+                                <a href="mailto:dfdfasf@gamil.com" className='hover:underline hover:text-primary'>orders@naell.com</a>
+                            </span>
+                        </div>
                         {
                             authenticated?
                                 <div className='relative dropdown-cont'>
@@ -103,9 +104,7 @@ function Navbar(props) {
                                 </div>
                         }
 
-                        <div>
-                            <div id="google_translate_element"></div>
-                        </div>
+
 
                     </div>
                 </div>
@@ -138,11 +137,14 @@ function Navbar(props) {
                                 <Link href='/about'>
                                     <a className='mb-4 block'>About</a>
                                 </Link>
-                                <Link href='/about'>
+                                <Link href='/fruits'>
                                     <a className='mb-4 block'>Fruits</a>
                                 </Link>
-                                <Link href='/about'>
+                                <Link href='/vegetables'>
                                     <a className='mb-4 block'>Vegetables</a>
+                                </Link>
+                                <Link href='/herbs'>
+                                    <a className='mb-4 block'>Herbs</a>
                                 </Link>
                             </div>
                         </div>

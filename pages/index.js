@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -7,6 +7,7 @@ import styles from '../styles/Home.module.css'
 import Partners from "../components/Partners";
 
 export default function Home() {
+    const [cat, setCat] = useState('Vegetables')
 
   return (
     <React.Fragment>
@@ -17,11 +18,32 @@ export default function Home() {
         </Head>
         <section className={styles.landing+' h-screen-h flex items-center justify-center flex-col'}>
             <h1 className='my-4 text-6 lg:text-8 text-white'>Source fruits and vegetables from all over Africa</h1>
-            <form className='w-300px h-10 bg-white rounded-md p-3 flex justify-between items-center'>
-                <input type="text"  placeholder='I&apos;m looking for... '/>
-                <button>
-                    <FontAwesomeIcon icon={solid('search')} className='h-4'/>
-                </button>
+            <div className="h-10 w-90% md:w-60% 2xl:w-50% flex">
+                {
+                    ['Vegetables','Fruits','Herbs'].map(myCat=>(
+                        <div key={myCat} >
+                            {
+                                cat === myCat?
+                                    <button className="h-full w-100px bg-white shadow-inner shadow-primary relative">
+                                        {myCat}
+                                        <span className="absolute top-full w-full h-3  v-center left-0 px-2px">
+                                            <div className="block w-full h-full bg-white"></div>
+                                        </span>
+                                    </button>
+                                    :
+                                    <button className="h-full w-100px bg-white" onClick={()=>{setCat(myCat)}}>{myCat}</button>
+                            }
+                        </div>
+                    ))
+                }
+            </div>
+            <form className='w-90% md:w-60% 2xl:w-50% h-10'>
+                <div className="bg-white roundebhd-md flex justify-between items-center h-10   shadow-inner shadow-primary p-3 border-b-1px border-primary">
+                    <input type="text"  placeholder='I&apos;m looking for... '/>
+                    <button>
+                        <FontAwesomeIcon icon={solid('search')} className='h-4'/>
+                    </button>
+                </div>
 
             </form>
 
