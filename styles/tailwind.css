@@ -672,6 +672,10 @@ video {
   margin-top: 4px;
 }
 
+.mr-6 {
+  margin-right: 28px;
+}
+
 .block {
   display: block;
 }

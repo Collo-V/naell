@@ -46,16 +46,16 @@ function Navbar(props) {
                     </Link>
                     <div className="flex">
                         <Link href='/about'>
-                            <a className={'uppercase text-5 mr-4 hover:text-primary '+getActive('/about')}> About</a>
+                            <a className={'uppercase text-5 mr-6 hover:text-primary '+getActive('/about')}> About</a>
                         </Link>
                         <Link href='/vegetables'>
-                            <a className={'uppercase text-5 mr-4 hover:text-primary '+getActive('/veges')}> Vegetables</a>
+                            <a className={'uppercase text-5 mr-6 hover:text-primary '+getActive('/veges')}> Vegetables</a>
                         </Link>
                         <Link href='/fruits'>
-                            <a className={'uppercase text-5 mr-4 hover:text-primary '+getActive('/fruits')}> Fruits</a>
+                            <a className={'uppercase text-5 mr-6 hover:text-primary '+getActive('/fruits')}> Fruits</a>
                         </Link>
                         <Link href='/herbs'>
-                            <a className={'uppercase text-5 mr-4 hover:text-primary '+getActive('/herbs')}> Herbs</a>
+                            <a className={'uppercase text-5 mr-6 hover:text-primary '+getActive('/herbs')}> Herbs</a>
                         </Link>
                     </div>
                     <div className='flex items-center'>
@@ -66,7 +66,7 @@ function Navbar(props) {
                             </span>
                             <span className='flex items-center gap-2'>
                                 <FontAwesomeIcon icon={regular('envelope')} className='h-4'/>
-                                <a href="mailto:dfdfasf@gamil.com" className='hover:underline hover:text-primary'>orders@naell.com</a>
+                                <a href="mailto:dfdfasf@gamil.com" className='hover:underline hover:text-primary'>orders@naell.africa</a>
                             </span>
                         </div>
                         {
