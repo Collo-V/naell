@@ -39,7 +39,7 @@ export default function Home() {
             </div>
             <form className='w-90% md:w-60% 2xl:w-50% h-10'>
                 <div className="bg-white roundebhd-md flex justify-between items-center h-10   shadow-inner shadow-primary p-3 border-b-1px border-primary">
-                    <input type="text"  placeholder='I&apos;m looking for... '/>
+                    <input type="text"  placeholder='I&apos;m looking for... ' className='w-full'/>
                     <button>
                         <FontAwesomeIcon icon={solid('search')} className='h-4'/>
                     </button>

@@ -1,5 +1,7 @@
 .landing{
-    background: url(../public/backgrounds/plantation.jpg) no-repeat center/cover
+    /*background: url(../public/backgrounds/plantation.jpg) no-repeat center/cover*/
+    background: url(../public/backgrounds/banner.png) no-repeat center/cover
+    /*background: url(../public/backgrounds/landing1.jpg) no-repeat center/cover*/
 }
 
 .ezgif{
