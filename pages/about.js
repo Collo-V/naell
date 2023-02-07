@@ -59,8 +59,8 @@ function About(props) {
                             <div className="w-full">
                                 <h3>6 years of intense research.</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum eveniet
-                                    fuga iste officia officiis pariatur perspiciatis? Ea, labore, voluptate!
+                                    Nael works with the best experts in agriculture to identify the best variety of all
+                                    types of fruits and vegetables, making sure the market gets the best.
                                 </p>
                             </div>
                         </div>
@@ -69,8 +69,8 @@ function About(props) {
                             <div className="w-full">
                                 <h3> Faster link up in supply chain </h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum eveniet
-                                    fuga iste officia officiis pariatur perspiciatis? Ea, labore, voluptate!
+                                    Nael has direct access to farmers in 45+ African countries, making sure the harvested crops
+                                    reach the market in the shortest time possible.
                                 </p>
                             </div>
                         </div>
@@ -79,8 +79,7 @@ function About(props) {
                             <div className="w-full">
                                 <h3>Wider market</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum eveniet
-                                    fuga iste officia officiis pariatur perspiciatis? Ea, labore, voluptate!
+                                    Fruits and vegetables from 50+ coutries in Africa can now be accessed from all over the world.
                                 </p>
                             </div>
                         </div>
@@ -98,11 +97,10 @@ function About(props) {
                     <h1 className="text-6">Our mission</h1>
                     <div className="mt-4 ">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda
-                            distinctio dolorem ea excepturi facere nam neque perferendis quisquam rem!
+                            Providing a platform where farmers from Africa meet buyers from all over the world
                         </p>
                         <p className="mt-2">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, vel.
+                            Nael is the safest and quickest way in which lovers of fruits and vegetables meet the best there are.
                         </p>
 
                     </div>
@@ -144,12 +142,11 @@ function About(props) {
                     <h1 className="text-6">Our vision</h1>
                     <div className="mt-4 ">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda
-                            distinctio dolorem ea excepturi facere nam neque perferendis quisquam rem!
+                            To provide the quickest way of fruit and vegetable export from Africa to the whole world
                         </p>
-                        <p className="mt-2">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, vel.
-                        </p>
+                        {/*<p className="mt-2">*/}
+                        {/*    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, vel.*/}
+                        {/*</p>*/}
 
                     </div>
 

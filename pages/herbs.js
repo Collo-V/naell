@@ -5,8 +5,36 @@ import {writeShowSearch} from "../store/reducers/search";
 import {useDispatch} from "react-redux";
 import Search from "../components/Search";
 
+import chives from '../public/herbs/chives.jpg'
+import mint from '../public/herbs/Mint-leaves-farmers-market-kenya-2.jpg'
+import basil from '../public/herbs/basils.jpeg'
+import rosemary from '../public/herbs/rosemary.jpg'
+import chillies from '../public/herbs/Red-Bullet-Chillies.jpeg'
+
 function Herbs(props) {
     const dispatch = useDispatch()
+    const herbs = [
+        {
+            name:'Chives',
+            image:chives.src
+        },
+        {
+            name:'Red Bullet Chillies',
+            image:chillies.src
+        },
+        {
+            name:'Rosemary Leaves',
+            image:rosemary.src
+        },
+        {
+            name:'Mint',
+            image:mint.src
+        },
+        {
+            name:'Basil',
+            image:basil.src
+        },
+    ]
     useEffect(()=>{
         try {
             let nav = document.getElementById('main-nav')
@@ -23,15 +51,13 @@ function Herbs(props) {
             <section className='mt-10 w-90% md:w-80% 2xl:w-60% mx-auto text-center'>
                 <h1 className='text-5 lg:text-6 mb-4'>Get access to all types of herbs grown in East Africa</h1>
                 <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ab aliquam aspernatur beatae commodi cumque deleniti eius eligendi
-                    eos ex, harum magni nulla numquam optio quaerat, quas, sint sit tempore? Aliquam!
+                    You can access the best variety of all types of herbs from the best growers in Africa
                 </p>
-                <p className="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ab aliquam aspernatur beatae commodi cumque deleniti eius eligendi
-                    eos ex, harum magni nulla numquam optio quaerat, quas, sint sit tempore? Aliquam!
-                </p>
+                {/*<p className="mb-4">*/}
+                {/*    Lorem ipsum dolor sit amet, consectetur adipisicing elit.*/}
+                {/*    Ab aliquam aspernatur beatae commodi cumque deleniti eius eligendi*/}
+                {/*    eos ex, harum magni nulla numquam optio quaerat, quas, sint sit tempore? Aliquam!*/}
+                {/*</p>*/}
 
             </section>
             <section className="mt-10">
@@ -54,7 +80,7 @@ function Herbs(props) {
                     <button className="min-w-150px h-8 bg-primary text-white whitespace-nowrap rounded-md" onClick={()=>{dispatch(writeShowSearch())}}>Advanced search</button>
                 </div>
                 <div className="w-90% md:w-80% 2xl:w-60% mx-auto flex flex-wrap gap-10 justify-center">
-                    <ItemsGrid/>
+                    <ItemsGrid items={herbs}/>
                 </div>
             </section>
         </div>
