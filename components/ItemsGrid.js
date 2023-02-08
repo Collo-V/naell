@@ -14,7 +14,7 @@ function ItemsGrid({items}) {
                             <div className='p-3 grid justify-center text-center'>
                                 <p>{product.name}</p>
                                 <p>
-                                    <Link href='/'>
+                                    <Link href='/products/product-1'>
                                         <a className='block h-8 mt-1 w-150px border-1px border-primary rounded-md flex items-center justify-center hover:text-white hover:bg-primary'>Inquire</a>
                                     </Link>
                                 </p>

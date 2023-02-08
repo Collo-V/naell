@@ -13,6 +13,7 @@ import kale from '../public/veggies/kale.jpg'
 import lettuce from '../public/veggies/lettuce.jpg'
 import garlic from '../public/veggies/garlic.jpg'
 import onions from '../public/veggies/onions.jpg'
+import background from "../public/backgrounds/woodBackground.jpg";
 
 function Vegetables(props) {
     const veggies = [
@@ -52,16 +53,24 @@ function Vegetables(props) {
     ]
     const dispatch = useDispatch()
     useEffect(()=>{
+        let nav = document.getElementById('main-nav')
         try {
-            let nav = document.getElementById('main-nav')
-            nav.classList.add('text-white')
+            nav.classList.add('nav-white','text-white')
         }catch{}
+        return ()=>{
+            try {
+                nav.classList.remove('nav-white','text-white')
+            }catch{}
+        }
     })
     return (
         <div>
             <Search/>
-            <section className='wood-background h-screen-h-50 p-10'>
-                <img src="/veggies/vegetables1.png" alt="" className='h-90% mx-auto'/>
+            <section className='wood-background h-screen-h-50 p-10 relative'>
+                <div className="absolute top-0 left-0 w-full h-full" style={{
+                    background:`url(${background.src}) no-repeat center/cover`
+                }}></div>
+                <img src="/veggies/vegetables1.png" alt="" className='h-90% mx-auto relative z-1'/>
 
             </section>
             <section className='mt-10 w-90% md:w-80% 2xl:w-60% mx-auto text-center'>

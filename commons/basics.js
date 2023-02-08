@@ -15,7 +15,9 @@ function manageScrollbar(remove){
                 } else {
                     nav.classList.replace('fixed', 'absolute')
                     nav.classList.remove('animate__animated', 'animate__slideInDown', 'bg-white','shadow-md')
-                    // nav.classList.add('text-white')
+                    if(nav.classList.contains('nav-white')){
+                        nav.classList.add('text-white')
+                    }
                 }
             }catch{}
         }

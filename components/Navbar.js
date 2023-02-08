@@ -24,7 +24,7 @@ function Navbar(props) {
     }
     let authenticated
     const router = useRouter()
-    const getActive = path=>router.pathname == path ? "link-active" : ""
+    const getActive = path=>router.pathname.includes(path) ? "link-active" : ""
     useEffect(()=>{
         manageScrollbar()
     },[])
@@ -46,16 +46,16 @@ function Navbar(props) {
                     </Link>
                     <div className="flex">
                         <Link href='/about'>
-                            <a className={'uppercase text-5 mr-6 hover:text-primary '+getActive('/about')}> About</a>
+                            <a className={'uppercase text-5 mr-6 hover:text-primary py-2 '+getActive('/about')}> About</a>
                         </Link>
                         <Link href='/vegetables'>
-                            <a className={'uppercase text-5 mr-6 hover:text-primary '+getActive('/veges')}> Vegetables</a>
+                            <a className={'uppercase text-5 mr-6 hover:text-primary py-2 '+getActive('/vegetables')}> Vegetables</a>
                         </Link>
                         <Link href='/fruits'>
-                            <a className={'uppercase text-5 mr-6 hover:text-primary '+getActive('/fruits')}> Fruits</a>
+                            <a className={'uppercase text-5 mr-6 hover:text-primary py-2 '+getActive('/fruits')}> Fruits</a>
                         </Link>
                         <Link href='/herbs'>
-                            <a className={'uppercase text-5 mr-6 hover:text-primary '+getActive('/herbs')}> Herbs</a>
+                            <a className={'uppercase text-5 mr-6 hover:text-primary py-2 '+getActive('/herbs')}> Herbs</a>
                         </Link>
                     </div>
                     <div className='flex items-center'>
